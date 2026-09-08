@@ -131,7 +131,7 @@ class Arm:
     motif_guidance: bool
 
 
-JOINT, FACTORISED_OVER_N, FACTORISED_OVER_K, FACTORISED_FLOORED, FACTORISED_MOTIF = (
+JOINT, FACTORISED_OVER_N, FACTORISED_OVER_K, FACTORISED_MOTIF, FACTORISED_FLOORED = (
     f"#{hex_code}" for hex_code in palettes.paultol_bright[:5]
 )
 
@@ -983,3 +983,5 @@ with plt.rc_context(figure_rc()):
     legend_below(fig, baseline=True)
     save(fig, "steering")
     plt.show()
+
+# %%

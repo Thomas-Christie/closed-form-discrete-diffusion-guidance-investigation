@@ -6,14 +6,14 @@ Models? A Closed-Form Analysis`. Code for running experiments can be found in `n
 
 ### Getting Started
 
-We used [uv](https://docs.astral.sh/uv/) for running experiments. In order to set up a virtual environment with all necessary dependencies installed, run the command:
+We used [uv](https://docs.astral.sh/uv/) for managing dependencies. In order to set up a virtual environment with all necessary dependencies installed, run the command:
 
 ```
 uv sync --all-groups
 ```
 
-We use [jupytext](https://jupytext.org/) for storing notebooks. In order to convert
-`notebooks/experiments.py` to `.ipynb` run the command:
+We use [jupytext](https://jupytext.org/) to manage Jupyter notebooks. In order to
+convert `notebooks/experiments.py` to `.ipynb` run the command:
 
 ```
 uv run jupytext --to ipynb notebooks/experiments.py
