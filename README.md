@@ -1,2 +1,20 @@
 # closed-form-discrete-diffusion-guidance-investigation
-Analysing SMC-based guidance for masked discrete diffusion models on a closed-form testbed.
+
+This repository contains the code used to run the experiments in the paper: `How
+Reliable are Intermediate Rewards for SMC-based Guidance in Masked Discrete Diffusion
+Models? A Closed-Form Analysis`. Code for running experiments can be found in `notebooks/experiments.py`.
+
+### Getting Started
+
+We used [uv](https://docs.astral.sh/uv/) for managing dependencies. In order to set up a virtual environment with all necessary dependencies installed, run the command:
+
+```
+uv sync --all-groups
+```
+
+We use [jupytext](https://jupytext.org/) to manage Jupyter notebooks. In order to
+convert `notebooks/experiments.py` to `.ipynb` run the command:
+
+```
+uv run jupytext --to ipynb notebooks/experiments.py
+```
